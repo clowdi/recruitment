@@ -1,7 +1,9 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const JobContext = createContext();
 
+// Custom hook to access job context
+// eslint-disable-next-line react-refresh/only-export-components
 export const useJobs = () => {
   const context = useContext(JobContext);
   if (!context) {
